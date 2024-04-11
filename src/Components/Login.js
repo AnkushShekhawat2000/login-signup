@@ -18,7 +18,7 @@ const Login = () => {
         if ( !formData.emailAddress || !formData.password ) {
           alert("all filed are mendiatory");
         } else {
-          navigate("/dashboard");
+          navigate("/profilePage");
           setFormData({emailAddress:"", password:""});
         }
       }

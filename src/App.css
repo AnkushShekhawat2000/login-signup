@@ -17,6 +17,12 @@
   padding-bottom: 50px;
 }
 
+html,
+body{
+  width: 100%;
+  height: 100vh;
+}
+
 /* common css */
 label{
   display: flex;
@@ -41,4 +47,16 @@ legend {
   margin-left: 10px;
    color: #8F5AFD;
    padding-inline: 5px 15px;
+}
+
+
+@media screen and (max-width:800px) {
+
+  .landing-page-container,.login-container,.ingupPage-container{
+      max-width: 100vw;
+      max-height: 100vh;
+      height: 100%;
+      width: 100%;
+  }
+ 
 }
