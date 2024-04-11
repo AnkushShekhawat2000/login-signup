@@ -7,7 +7,6 @@
     border: 2px solid #E1E1E1;
     background-color:#F7F8F9;
     max-width: 350px;
-    height: 90vh;
     flex-shrink: initial;
     
 }
@@ -34,10 +33,7 @@
     gap: 330px
 }
 
-.signup-button{
-   position: relative;
-   top: 180px;
-}
+
 
 
 fieldset span, .red-star{
