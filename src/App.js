@@ -1,22 +1,26 @@
 import React from "react";
-import Home from "./Components/Home"
+import LandingPage from "./Components/LandingPage"
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
+import "./App.css"
+import "./Components/Style/landingPage.css"
+import "./Components/Style/signup.css"
+import "./Components/Style/login.css"
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<LandingPage/>}/>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 };
