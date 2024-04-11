@@ -29,11 +29,12 @@
     padding: 20px;
 }
 
-.profile-info p{
+.lorem-text{
    width: 100%;
    color: #313539;
    font-size: 15px;
    font-weight: 200px;
+   margin-top: 20px;
 }
 
 .info{

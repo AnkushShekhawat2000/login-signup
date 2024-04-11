@@ -27,7 +27,7 @@ const SignUp = () => {
         if (!user.name || !user.phoneNumber || !user.emailAddress || !user.password || !user.radioButton) {
           alert("Please fill all required fields");
         } else {
-          navigate("/dashboard");
+          navigate("/profilePage");
         }
       }
       

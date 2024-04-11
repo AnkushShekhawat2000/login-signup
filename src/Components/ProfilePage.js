@@ -17,7 +17,7 @@ const ProfilePage = () => {
                   <p>Marry@Gamil.com</p>
                 </div>
                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veritatis nisi aspernatur Dolore magna Diam. 
+                <p className="lorem-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veritatis nisi aspernatur Dolore magna Diam. 
                 </p>  
             </div>
            
