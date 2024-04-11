@@ -52,7 +52,7 @@ legend {
 
 @media screen and (max-width:800px) {
 
-  .landing-page-container,.login-container,.ingupPage-container{
+  .landing-page-container,.login-container,.singupPage-container, .profilePage{
       max-width: 100vw;
       max-height: 100vh;
       height: 100%;
