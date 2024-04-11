@@ -34,12 +34,6 @@ border: 2px solid #E1E1E1;
     margin-top: 20px;
 }
 
-.login-container input{
-    border: 0px solid;
-  
-    background-color:black;
-    padding: 2px;
-}
 
 .login-button{
     display: flex;
