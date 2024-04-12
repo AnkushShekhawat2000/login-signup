@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import LandingPage from "./Components/LandingPage"
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
@@ -11,15 +11,26 @@ import "./Components/Style/profilePage.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
+
+  const [userData, setUserData] = useState(null);
+
+  function handleSignup(data){
+    setUserData(data);
+  }
+
+  function HandleLogin(data){
+    setUserData(data);
+  }
+
   return (
     <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage/>}/>
           <Route path="/landingPage" element={<LandingPage/>}/>
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profilePage" element={<ProfilePage />} />
+          <Route path="/signup" element={<Signup onSignup={handleSignup} />} />
+          <Route path="/login" element={<Login onLogin={HandleLogin}/>} />
+          <Route path="/profilePage" element={<ProfilePage user={userData}/>} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -27,3 +38,5 @@ const App = () => {
 };
 
 export default App;
+
+

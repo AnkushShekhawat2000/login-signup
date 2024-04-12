@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import {useNavigate} from "react-router-dom";
 
-const Login = () => {
+const Login = ({onLogin}) => {
 
     const navigate = useNavigate();
 
@@ -19,6 +19,8 @@ const Login = () => {
           alert("all filed are mendiatory");
         } else {
           navigate("/profilePage");
+          onLogin(formData);
+
           setFormData({emailAddress:"", password:""});
         }
       }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const SignUp = () => {
+const SignUp = ({ onSignup }) => {
     const navigate = useNavigate();
     const [user, setUser] = useState({
         name: "",
@@ -11,7 +11,6 @@ const SignUp = () => {
         companyName: "",
         radioButton: null
     });
-
 
     function updateUser(e) {
         let key = e.target.name;
@@ -27,6 +26,7 @@ const SignUp = () => {
         if (!user.name || !user.phoneNumber || !user.emailAddress || !user.password || !user.radioButton) {
           alert("Please fill all required fields");
         } else {
+            onSignup(user);
           navigate("/profilePage");
         }
       }
